@@ -14,7 +14,6 @@
 #import "KStyle.h"
 #import "KMachService.h"
 #import "KSudo.h"
-#import "KNodeThread.h"
 
 #import <Sparkle/SUUpdater.h>
 
@@ -178,10 +177,6 @@
   #if K_WITH_F_SCRIPT
   [[NSApp mainMenu] addItem:[[FScriptMenuItem alloc] init]];
   #endif
-
-  // Start node.js
-  KNodeThread *nodeThread = [[KNodeThread alloc] init];
-  [nodeThread start];
 
   // Start Mach service
   [KMachService sharedService];

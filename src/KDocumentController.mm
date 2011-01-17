@@ -12,7 +12,6 @@
 #import "KKodURLHandler.h"
 #import "HEventEmitter.h"
 #import "kconf.h"
-#import "kod_node_interface.h"
 
 #import <objc/objc-runtime.h>
 
@@ -445,7 +444,7 @@ withWindowController:(KBrowserWindowController*)windowController
     }
   }
 
-  KNodeEmitEvent("openDocument", doc, nil);
+  // KNodeEmitEvent("openDocument", doc);
 
   [self addDocument:doc withWindowController:windowController
        inForeground:display

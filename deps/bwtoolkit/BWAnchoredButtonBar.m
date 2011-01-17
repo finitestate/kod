@@ -34,21 +34,21 @@ static float scaleFactor = 0.0f;
 
 + (void)initialize;
 {
-  topLineColor     = [[NSColor colorWithCalibratedWhite:(202.0f / 255.0f) alpha:1] retain];
-  bottomLineColor     = [[NSColor colorWithCalibratedWhite:(170.0f / 255.0f) alpha:1] retain];
+    topLineColor     = [[NSColor colorWithCalibratedWhite:(202.0f / 255.0f) alpha:1] retain];
+    bottomLineColor     = [[NSColor colorWithCalibratedWhite:(170.0f / 255.0f) alpha:1] retain];
     topColor       = [[NSColor colorWithCalibratedWhite:(253.0f / 255.0f) alpha:1] retain];
     middleTopColor     = [[NSColor colorWithCalibratedWhite:(242.0f / 255.0f) alpha:1] retain];
     middleBottomColor   = [[NSColor colorWithCalibratedWhite:(230.0f / 255.0f) alpha:1] retain];
-  bottomColor       = [[NSColor colorWithCalibratedWhite:(230.0f / 255.0f) alpha:1] retain];
-  sideInsetColor     = [[NSColor colorWithCalibratedWhite:(255.0f / 255.0f) alpha:0.5] retain];
-  borderedTopLineColor = [[NSColor colorWithCalibratedWhite:(190.0f / 255.0f) alpha:1] retain];
+    bottomColor       = [[NSColor colorWithCalibratedWhite:(230.0f / 255.0f) alpha:1] retain];
+    sideInsetColor     = [[NSColor colorWithCalibratedWhite:(255.0f / 255.0f) alpha:0.5] retain];
+    borderedTopLineColor = [[NSColor colorWithCalibratedWhite:(190.0f / 255.0f) alpha:1] retain];
 
-  gradient       = [[NSGradient alloc] initWithColorsAndLocations:
-               topColor, (CGFloat)0.0,
-               middleTopColor, (CGFloat)0.45454,
-               middleBottomColor, (CGFloat)0.45454,
-               bottomColor, (CGFloat)1.0,
-               nil];
+    gradient       = [[NSGradient alloc] initWithColorsAndLocations:
+                      topColor, (CGFloat)0.0,
+                      middleTopColor, (CGFloat)0.45454,
+                      middleBottomColor, (CGFloat)0.45454,
+                      bottomColor, (CGFloat)1.0,
+                      nil];
 
   resizeHandleColor   = [[NSColor colorWithCalibratedWhite:(0.0f / 255.0f) alpha:0.598] retain];
   resizeInsetColor   = [[NSColor colorWithCalibratedWhite:(255.0f / 255.0f) alpha:0.55] retain];

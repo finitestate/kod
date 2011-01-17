@@ -6,12 +6,11 @@
 
 #import "common.h"
 #import "HSpinLock.h"
-#import "AST.h"
 
 @class KBrowser, KStyle, KBrowserWindowController, KScrollView, KMetaRulerView;
 @class KTextView, KClipView, KURLHandler;
 
-class KNodeParseEntry;
+//class KNodeParseEntry;
 
 // notifications
 extern NSString *const KDocumentDidLoadDataNotification;
@@ -29,7 +28,7 @@ extern NSString *const KDocumentDidLoadDataNotification;
   NSStringEncoding textEncoding_;
 
   // Abstract Syntax Tree
-  kod::ASTPtr ast_;
+  // kod::ASTPtr ast_;
 
   // Mapped line breaks. Provides number of lines and a mapping from line number
   // to actual character offset. The location of each range denotes the start
@@ -86,10 +85,6 @@ extern NSString *const KDocumentDidLoadDataNotification;
 @property(readonly) uint64_t version;
 
 
-@property(readonly, assign) kod::ASTPtr ast;
-@property(readonly, assign) kod::ASTNodePtr astRootNode;
-
-
 // A Uniform Type Identifier for the current contents
 @property(retain) NSString *type;
 - (void)setTypeFromPathExtension:(NSString*)pathExtension;
@@ -120,10 +115,6 @@ extern NSString *const KDocumentDidLoadDataNotification;
 
 - (void)refreshStyle;
 - (void)styleDidChange:(NSNotification*)notification;
-
-- (void)ASTWasUpdated:(kod::ASTNodePtr)astRoot
-       basedOnVersion:(uint64_t)version
-           parseEntry:(KNodeParseEntry*)parseEntry;
 
 - (void)textStorageDidProcessEditing:(NSNotification*)notification;
 

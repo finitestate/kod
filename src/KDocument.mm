@@ -20,12 +20,7 @@
 #import "KStatusBarView.h"
 #import "KMetaRulerView.h"
 #import "HEventEmitter.h"
-#import "kod_node_interface.h"
-#import "knode_ns_additions.h"
 #import "ExternalUTF16String.h"
-#import "node-module/ASTNodeWrapper.h"
-#import "KASTViewerWindowController.h"
-#import "KASTViewerController.h"
 
 #import "NSImage-kod.h"
 #import "CIImage-kod.h"
@@ -86,9 +81,8 @@ static uint64_t KDocumentNextIdentifier() {
 
 @implementation KDocument
 
-@synthesize textEncoding = textEncoding_,
-            textView = textView_,
-            ast = ast_;
+@synthesize textEncoding = textEncoding_;
+@synthesize textView = textView_;
 
 static NSImage* _kDefaultIcon = nil;
 static NSString* _kDefaultTitle = @"Untitled";
@@ -111,8 +105,7 @@ static NSString* _kDefaultTitle = @"Untitled";
   identifier_ = KDocumentNextIdentifier();
 
   // Initialize ast_
-  ast_.reset(new kod::AST);
-
+    
   // Default title and icon
   self.title = _kDefaultTitle;
   self.icon = _kDefaultIcon;
@@ -511,13 +504,6 @@ static NSString* _kDefaultTitle = @"Untitled";
   return ![self isDocumentEdited] && ![self fileURL];
 }
 
-
-- (kod::ASTNodePtr)astRootNode {
-  kassert(ast_.get() != NULL);
-  return ast_->rootNode();
-}
-
-
 #pragma mark -
 #pragma mark Notifications
 
@@ -546,8 +532,7 @@ static NSString* _kDefaultTitle = @"Untitled";
 
 
 - (void)tabWillCloseInBrowser:(CTBrowser*)browser atIndex:(NSInteger)index {
-  NSNumber *ident = [NSNumber numberWithUnsignedInteger:self.identifier];
-  KNodeEmitEvent("closeDocument", self, ident, nil);
+  // KNodeEmitEvent("closeDocument", self, self.identifier);
   // TODO(rsms): emit "close" event in nodejs on our v8 wrapper object instead
   // of the kod module.
 
@@ -579,7 +564,7 @@ static NSString* _kDefaultTitle = @"Untitled";
   // XXX FIXME TEMP DEBUG ...
   [self debugUpdateASTViewer:self];
 
-  KNodeEmitEvent("activateDocument", self, nil);
+  // KNodeEmitEvent("activateDocument", self, nil);
 }
 
 
@@ -610,47 +595,47 @@ static NSString* _kDefaultTitle = @"Untitled";
 }
 
 
-- (NSString*)_inspectASTTree:(kod::ASTNodePtr&)astNode {
-  if (!astNode.get())
-    return @"<null>";
-  NSMutableString *str = [NSMutableString stringWithFormat:
-      @"{ kind:\"%@\", sourceRange:%@",
-      astNode->kind()->weakNSString(),
-      NSStringFromRange(astNode->sourceRange())];
+//- (NSString*)_inspectASTTree:(kod::ASTNodePtr&)astNode {
+//  if (!astNode.get())
+//    return @"<null>";
+//  NSMutableString *str = [NSMutableString stringWithFormat:
+//      @"{ kind:\"%@\", sourceRange:%@",
+//      astNode->kind()->weakNSString(),
+//      NSStringFromRange(astNode->sourceRange())];
+//
+//  if (!astNode->childNodes().empty()) {
+//    [str appendFormat:@", childNodes: ["];
+//    std::vector<kod::ASTNodePtr>::iterator it = astNode->childNodes().begin();
+//    std::vector<kod::ASTNodePtr>::iterator endit = astNode->childNodes().end();
+//    for ( ; it < endit; ++it ) {
+//      [str appendString:[self _inspectASTTree:*it]];
+//    }
+//    [str appendFormat:@"]"];
+//  }
+//
+//  [str appendString:@"},"];
+//  return str;
+//}
 
-  if (!astNode->childNodes().empty()) {
-    [str appendFormat:@", childNodes: ["];
-    std::vector<kod::ASTNodePtr>::iterator it = astNode->childNodes().begin();
-    std::vector<kod::ASTNodePtr>::iterator endit = astNode->childNodes().end();
-    for ( ; it < endit; ++it ) {
-      [str appendString:[self _inspectASTTree:*it]];
-    }
-    [str appendFormat:@"]"];
-  }
 
-  [str appendString:@"},"];
-  return str;
-}
-
-
-- (void)ASTWasUpdated:(kod::ASTNodePtr)astRoot
-       basedOnVersion:(uint64_t)version
-           parseEntry:(KNodeParseEntry*)parseEntry {
-  DLOG("%@ ASTWasUpdated:basedOnVersion: %llu (current version: %llu)",
-       self, version, version_);
-
-  // TODO(rsms): verify version -- when results arrive for an old version,
-  // re-issue the edit or something. We need to apply magic Brain Power here...
-  // Until then, we simply discard an old AST and wait a few moment more until a
-  // newer AST arrives.
-
-  if (version == version_) {
-    // replace/update ast root
-    ast_->setRootNode(astRoot);
-    //DLOG("AST: %@", [self _inspectASTTree:astRoot]);
-    K_DISPATCH_MAIN_ASYNC({ [self debugUpdateASTViewer:self]; });
-  }
-}
+//- (void)ASTWasUpdated:(kod::ASTNodePtr)astRoot
+//       basedOnVersion:(uint64_t)version
+//           parseEntry:(KNodeParseEntry*)parseEntry {
+//  DLOG("%@ ASTWasUpdated:basedOnVersion: %llu (current version: %llu)",
+//       self, version, version_);
+//
+//  // TODO(rsms): verify version -- when results arrive for an old version,
+//  // re-issue the edit or something. We need to apply magic Brain Power here...
+//  // Until then, we simply discard an old AST and wait a few moment more until a
+//  // newer AST arrives.
+//
+//  if (version == version_) {
+//    // replace/update ast root
+//    ast_->setRootNode(astRoot);
+//    //DLOG("AST: %@", [self _inspectASTTree:astRoot]);
+//    K_DISPATCH_MAIN_ASYNC({ [self debugUpdateASTViewer:self]; });
+//  }
+//}
 
 
 #pragma mark -
@@ -860,13 +845,13 @@ static NSString* _kDefaultTitle = @"Untitled";
 
 
 - (IBAction)debugUpdateASTViewer:(id)sender {
-  KASTViewerWindowController *astViewerWindowController =
-      [KASTViewerWindowController sharedInstance];
-  kassert(astViewerWindowController);
-  KASTViewerController *astViewerController =
-    astViewerWindowController.outlineViewController;
-  kassert(astViewerController);
-  astViewerController.representedDocument = self;
+//  KASTViewerWindowController *astViewerWindowController =
+//      [KASTViewerWindowController sharedInstance];
+//  kassert(astViewerWindowController);
+//  KASTViewerController *astViewerController =
+//    astViewerWindowController.outlineViewController;
+//  kassert(astViewerController);
+//  astViewerController.representedDocument = self;
 }
 
 
@@ -1347,8 +1332,8 @@ static void _lb_offset_ranges(std::vector<NSRange> &lineToRangeVec,
   NSInteger changeDelta = [textStorage changeInLength];
 
   // enqeue edit to be handled by the text parser system
-  KNodeEnqueueParseEntry(new KNodeParseEntry(editedRange.location,
-                                             changeDelta, self));
+//  KNodeEnqueueParseEntry(new KNodeParseEntry(editedRange.location,
+//                                             changeDelta, self));
 }
 
 

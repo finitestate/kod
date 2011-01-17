@@ -31,18 +31,9 @@
 		3A15936B128B619800339E6E /* NSString-intern.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A15936A128B619800339E6E /* NSString-intern.m */; };
 		3A15949F128B83F100339E6E /* NSString-cpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A15949E128B83F100339E6E /* NSString-cpp.mm */; };
 		3A159685128C432800339E6E /* KStyle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A159684128C432800339E6E /* KStyle.mm */; };
-		3A24231712CB9A2100522D81 /* kod in Copy nodelib */ = {isa = PBXBuildFile; fileRef = 3A24231112CB99FF00522D81 /* kod */; };
 		3A25E4B71281AE3700B6A33E /* KStyleElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A25E4B61281AE3700B6A33E /* KStyleElement.mm */; };
 		3A25E6101281CFEF00B6A33E /* NSColor-web.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A25E60F1281CFEF00B6A33E /* NSColor-web.m */; };
 		3A34A7CF12D8C5A9009D17BA /* ChromiumTabs.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC6ECC412C8E05B00C8DBFC /* ChromiumTabs.framework */; };
-		3A366A8412CB873D00257AE6 /* KObjectProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A366A8112CB873D00257AE6 /* KObjectProxy.mm */; };
-		3A366A8512CB873D00257AE6 /* node_kod.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A366A8312CB873D00257AE6 /* node_kod.mm */; };
-		3A37B0E612D9508B00ED811C /* ASTNodeWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A37B0E412D9508B00ED811C /* ASTNodeWrapper.mm */; };
-		3A37B39412DA2A4200ED811C /* ast-viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A37B39312DA2A4200ED811C /* ast-viewer.xib */; };
-		3A37B39812DA2AB600ED811C /* KASTViewerController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A37B39712DA2AB600ED811C /* KASTViewerController.mm */; };
-		3A37B39D12DA2C5000ED811C /* KASTViewerWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A37B39C12DA2C5000ED811C /* KASTViewerWindowController.mm */; };
-		3A37B4A812DA416E00ED811C /* ASTNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A37B4A712DA416E00ED811C /* ASTNode.mm */; };
-		3A37B54712DA48E500ED811C /* KASTOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A37B54612DA48E500ED811C /* KASTOutlineView.m */; };
 		3A40F92F12AFF21A007B5879 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3A40F92E12AFF21A007B5879 /* main.js */; };
 		3A4CB3E112B1872300B45858 /* NSString-data.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4CB3E012B1872300B45858 /* NSString-data.m */; };
 		3A4F478512CFA83900301464 /* KWordDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F478412CFA83900301464 /* KWordDictionary.mm */; };
@@ -105,7 +96,6 @@
 		3AA81B2412C62D270085F086 /* CIImage-kod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA81B2312C62D270085F086 /* CIImage-kod.m */; };
 		3AA81B2712C62D6A0085F086 /* NSImage-kod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA81B2612C62D6A0085F086 /* NSImage-kod.m */; };
 		3AA81B2F12C62E160085F086 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA81B2E12C62E160085F086 /* QuartzCore.framework */; };
-		3AA91F2312CA43DE00132A25 /* KNodeThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AA91F2212CA43DE00132A25 /* KNodeThread.mm */; };
 		3AA91F3412CA467E00132A25 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA91F3312CA467E00132A25 /* libcrypto.dylib */; };
 		3AA91F3612CA469100132A25 /* libdl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA91F3512CA469100132A25 /* libdl.dylib */; };
 		3AA91F3812CA469B00132A25 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA91F3712CA469B00132A25 /* libz.dylib */; };
@@ -117,8 +107,6 @@
 		3AAC02B812BD1110001BDC39 /* kconf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC02B712BD1110001BDC39 /* kconf.m */; };
 		3AAC03F012BD2FC2001BDC39 /* sidebar-closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AAC03EE12BD2FC2001BDC39 /* sidebar-closed.png */; };
 		3AAC03F112BD2FC2001BDC39 /* sidebar-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AAC03EF12BD2FC2001BDC39 /* sidebar-open.png */; };
-		3AB57E0612CA634C00E528B1 /* kod_node_interface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AB57E0512CA634C00E528B1 /* kod_node_interface.mm */; };
-		3AB57EAD12CA725A00E528B1 /* knode_ns_additions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AB57EAC12CA725A00E528B1 /* knode_ns_additions.mm */; };
 		3AB5823612CAD15300E528B1 /* k_objc_prop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5823512CAD15300E528B1 /* k_objc_prop.m */; };
 		3AB6968812D0FE1400330F3A /* NSError+KAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9293661229E49A00DA7E43 /* NSError+KAdditions.m */; };
 		3AB6974B12D1085700330F3A /* KMachService-NSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6974A12D1085700330F3A /* KMachService-NSInvocation.m */; };
@@ -142,7 +130,6 @@
 		3AC2D4A71298D8050066B586 /* KTextStorage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2D4A61298D8050066B586 /* KTextStorage.mm */; };
 		3AC2D74012998D590066B586 /* CSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE5EB871292DB5C00B17C4F /* CSS.framework */; };
 		3AC6ECCD12C8E07D00C8DBFC /* ChromiumTabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC6ECC412C8E05B00C8DBFC /* ChromiumTabs.framework */; };
-		3AC866C412DE69360077673C /* KNodeParseEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AC866C312DE69360077673C /* KNodeParseEntry.mm */; };
 		3AE5E5171290955000B17C4F /* kod.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5E5161290955000B17C4F /* kod.icns */; };
 		3AE5E9A3129180CB00B17C4F /* CSS.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE5E8B312915ABA00B17C4F /* CSS.framework */; };
 		3AE5ECB61292F7B800B17C4F /* KThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5ECB51292F7B800B17C4F /* KThread.mm */; };
@@ -152,6 +139,7 @@
 		3AF39DB212BE9C8A00FC534A /* KPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39DB112BE9C8A00FC534A /* KPopUp.m */; };
 		3AF39DE212BEC15E00FC534A /* KPopUpContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39DE112BEC15E00FC534A /* KPopUpContentView.m */; };
 		3AF3A0A512BF7F6400FC534A /* KAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3A0A412BF7F6400FC534A /* KAnimation.m */; };
+		C08761D112E490110055CB8F /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08761D012E490110055CB8F /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,7 +239,6 @@
 			dstPath = nodelib;
 			dstSubfolderSpec = 12;
 			files = (
-				3A24231712CB9A2100522D81 /* kod in Copy nodelib */,
 			);
 			name = "Copy nodelib";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,29 +265,12 @@
 		3A159684128C432800339E6E /* KStyle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KStyle.mm; sourceTree = "<group>"; };
 		3A15968A128C501C00339E6E /* HSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSemaphore.h; sourceTree = "<group>"; };
 		3A1596E5128C607700339E6E /* hobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hobjc.h; sourceTree = "<group>"; };
-		3A24231112CB99FF00522D81 /* kod */ = {isa = PBXFileReference; lastKnownFileType = folder; name = kod; path = "node-module/kod"; sourceTree = "<group>"; };
 		3A25E47A1281A6A200B6A33E /* libboost_regex-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_regex-mt.dylib"; path = "deps/srchilight/libboost_regex-mt.dylib"; sourceTree = "<group>"; };
 		3A25E47C1281A6A700B6A33E /* libsource-highlight.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsource-highlight.dylib"; path = "deps/srchilight/libsource-highlight.dylib"; sourceTree = "<group>"; };
 		3A25E4B51281AE3700B6A33E /* KStyleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStyleElement.h; sourceTree = "<group>"; };
 		3A25E4B61281AE3700B6A33E /* KStyleElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KStyleElement.mm; sourceTree = "<group>"; };
 		3A25E60E1281CFEF00B6A33E /* NSColor-web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor-web.h"; sourceTree = "<group>"; };
 		3A25E60F1281CFEF00B6A33E /* NSColor-web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor-web.m"; sourceTree = "<group>"; };
-		3A366A8012CB873D00257AE6 /* KObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KObjectProxy.h; path = "node-module/KObjectProxy.h"; sourceTree = "<group>"; };
-		3A366A8112CB873D00257AE6 /* KObjectProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KObjectProxy.mm; path = "node-module/KObjectProxy.mm"; sourceTree = "<group>"; };
-		3A366A8212CB873D00257AE6 /* node_kod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = node_kod.h; path = "node-module/node_kod.h"; sourceTree = "<group>"; };
-		3A366A8312CB873D00257AE6 /* node_kod.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = node_kod.mm; path = "node-module/node_kod.mm"; sourceTree = "<group>"; };
-		3A37B0E412D9508B00ED811C /* ASTNodeWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ASTNodeWrapper.mm; path = "node-module/ASTNodeWrapper.mm"; sourceTree = "<group>"; };
-		3A37B0E512D9508B00ED811C /* ASTNodeWrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ASTNodeWrapper.h; path = "node-module/ASTNodeWrapper.h"; sourceTree = "<group>"; };
-		3A37B10F12D9592900ED811C /* ASTNode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = ASTNode.h; sourceTree = "<group>"; };
-		3A37B2AD12D9895600ED811C /* AST.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = AST.h; sourceTree = "<group>"; };
-		3A37B39312DA2A4200ED811C /* ast-viewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ast-viewer.xib"; path = "resources/ast-viewer.xib"; sourceTree = SOURCE_ROOT; };
-		3A37B39612DA2AB600ED811C /* KASTViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASTViewerController.h; sourceTree = "<group>"; };
-		3A37B39712DA2AB600ED811C /* KASTViewerController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KASTViewerController.mm; sourceTree = "<group>"; };
-		3A37B39B12DA2C5000ED811C /* KASTViewerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASTViewerWindowController.h; sourceTree = "<group>"; };
-		3A37B39C12DA2C5000ED811C /* KASTViewerWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KASTViewerWindowController.mm; sourceTree = "<group>"; };
-		3A37B4A712DA416E00ED811C /* ASTNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ASTNode.mm; sourceTree = "<group>"; };
-		3A37B54512DA48E500ED811C /* KASTOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASTOutlineView.h; sourceTree = "<group>"; };
-		3A37B54612DA48E500ED811C /* KASTOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KASTOutlineView.m; sourceTree = "<group>"; };
 		3A40F92E12AFF21A007B5879 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3A4450C512D68E4800036EF0 /* sudden_termination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sudden_termination.h; path = core/sudden_termination.h; sourceTree = "<group>"; };
 		3A4CB3DF12B1872300B45858 /* NSString-data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-data.h"; sourceTree = "<group>"; };
@@ -428,8 +398,6 @@
 		3AA91E5C12C95CC000132A25 /* base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = base.xcconfig; sourceTree = "<group>"; };
 		3AA91E5D12C95CC000132A25 /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		3AA91E5E12C95CC000132A25 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
-		3AA91F2112CA43DE00132A25 /* KNodeThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNodeThread.h; sourceTree = "<group>"; };
-		3AA91F2212CA43DE00132A25 /* KNodeThread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KNodeThread.mm; sourceTree = "<group>"; };
 		3AA91F3312CA467E00132A25 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
 		3AA91F3512CA469100132A25 /* libdl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdl.dylib; path = /usr/lib/libdl.dylib; sourceTree = "<absolute>"; };
 		3AA91F3712CA469B00132A25 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
@@ -439,10 +407,6 @@
 		3AAC02B712BD1110001BDC39 /* kconf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kconf.m; sourceTree = "<group>"; };
 		3AAC03EE12BD2FC2001BDC39 /* sidebar-closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebar-closed.png"; sourceTree = "<group>"; };
 		3AAC03EF12BD2FC2001BDC39 /* sidebar-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebar-open.png"; sourceTree = "<group>"; };
-		3AB57DD612CA5CF800E528B1 /* kod_node_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kod_node_interface.h; sourceTree = "<group>"; };
-		3AB57E0512CA634C00E528B1 /* kod_node_interface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = kod_node_interface.mm; sourceTree = "<group>"; };
-		3AB57EAB12CA725A00E528B1 /* knode_ns_additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knode_ns_additions.h; sourceTree = "<group>"; };
-		3AB57EAC12CA725A00E528B1 /* knode_ns_additions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = knode_ns_additions.mm; sourceTree = "<group>"; };
 		3AB5823412CAD15300E528B1 /* k_objc_prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = k_objc_prop.h; sourceTree = "<group>"; };
 		3AB5823512CAD15300E528B1 /* k_objc_prop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = k_objc_prop.m; sourceTree = "<group>"; };
 		3AB6974912D1085700330F3A /* KMachService-NSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KMachService-NSInvocation.h"; sourceTree = "<group>"; };
@@ -487,8 +451,6 @@
 		3ABF541E12A5DC6F0020233C /* KClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KClipView.m; sourceTree = "<group>"; };
 		3AC2D4A51298D8050066B586 /* KTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextStorage.h; sourceTree = "<group>"; };
 		3AC2D4A61298D8050066B586 /* KTextStorage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KTextStorage.mm; sourceTree = "<group>"; };
-		3AC866C212DE69360077673C /* KNodeParseEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNodeParseEntry.h; sourceTree = "<group>"; };
-		3AC866C312DE69360077673C /* KNodeParseEntry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KNodeParseEntry.mm; sourceTree = "<group>"; };
 		3AE5E5161290955000B17C4F /* kod.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = kod.icns; path = icon/kod.icns; sourceTree = "<group>"; };
 		3AE5E8A912915ABA00B17C4F /* CSS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSS.xcodeproj; path = "deps/libcss/cocoa-framework/CSS.xcodeproj"; sourceTree = "<group>"; };
 		3AE5EA551292B2D000B17C4F /* kconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kconf.h; sourceTree = "<group>"; };
@@ -507,6 +469,7 @@
 		3AF39DE112BEC15E00FC534A /* KPopUpContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPopUpContentView.m; sourceTree = "<group>"; };
 		3AF3A0A312BF7F6400FC534A /* KAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAnimation.h; sourceTree = "<group>"; };
 		3AF3A0A412BF7F6400FC534A /* KAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAnimation.m; sourceTree = "<group>"; };
+		C08761D012E490110055CB8F /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +495,7 @@
 				3AA91F3612CA469100132A25 /* libdl.dylib in Frameworks */,
 				3AA91F3812CA469B00132A25 /* libz.dylib in Frameworks */,
 				3AA91F3C12CA46B200132A25 /* libssl.dylib in Frameworks */,
+				C08761D112E490110055CB8F /* Python.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,20 +513,6 @@
 				3A158ADA128A09D300339E6E /* NSStringICUAdditions.m */,
 			);
 			path = ICU;
-			sourceTree = "<group>";
-		};
-		3A366A6F12CB86CA00257AE6 /* kod module */ = {
-			isa = PBXGroup;
-			children = (
-				3A24231112CB99FF00522D81 /* kod */,
-				3A366A8212CB873D00257AE6 /* node_kod.h */,
-				3A366A8312CB873D00257AE6 /* node_kod.mm */,
-				3A37B0E512D9508B00ED811C /* ASTNodeWrapper.h */,
-				3A37B0E412D9508B00ED811C /* ASTNodeWrapper.mm */,
-				3A366A8012CB873D00257AE6 /* KObjectProxy.h */,
-				3A366A8112CB873D00257AE6 /* KObjectProxy.mm */,
-			);
-			name = "kod module";
 			sourceTree = "<group>";
 		};
 		3A37B13512D95F5E00ED811C /* Strings (text) */ = {
@@ -622,47 +572,13 @@
 			name = "Shared globals";
 			sourceTree = "<group>";
 		};
-		3A37B39212DA29F000ED811C /* AST viewer */ = {
+		3A4F478212CFA81800301464 /* Autocomplete */ = {
 			isa = PBXGroup;
 			children = (
-				3A37B54512DA48E500ED811C /* KASTOutlineView.h */,
-				3A37B54612DA48E500ED811C /* KASTOutlineView.m */,
-				3A37B39B12DA2C5000ED811C /* KASTViewerWindowController.h */,
-				3A37B39C12DA2C5000ED811C /* KASTViewerWindowController.mm */,
-				3A37B39612DA2AB600ED811C /* KASTViewerController.h */,
-				3A37B39712DA2AB600ED811C /* KASTViewerController.mm */,
-				3A37B39312DA2A4200ED811C /* ast-viewer.xib */,
-			);
-			name = "AST viewer";
-			sourceTree = "<group>";
-		};
-		3A40F8C312AFE5D7007B5879 /* Node */ = {
-			isa = PBXGroup;
-			children = (
-				3AB57DD612CA5CF800E528B1 /* kod_node_interface.h */,
-				3AB57E0512CA634C00E528B1 /* kod_node_interface.mm */,
-				3AB57EAB12CA725A00E528B1 /* knode_ns_additions.h */,
-				3AB57EAC12CA725A00E528B1 /* knode_ns_additions.mm */,
-				3AC866C212DE69360077673C /* KNodeParseEntry.h */,
-				3AC866C312DE69360077673C /* KNodeParseEntry.mm */,
-				3AA91F2112CA43DE00132A25 /* KNodeThread.h */,
-				3AA91F2212CA43DE00132A25 /* KNodeThread.mm */,
-				3A366A6F12CB86CA00257AE6 /* kod module */,
-			);
-			name = Node;
-			sourceTree = "<group>";
-		};
-		3A4F478212CFA81800301464 /* Text */ = {
-			isa = PBXGroup;
-			children = (
-				3A37B39212DA29F000ED811C /* AST viewer */,
-				3A37B2AD12D9895600ED811C /* AST.h */,
-				3A37B10F12D9592900ED811C /* ASTNode.h */,
-				3A37B4A712DA416E00ED811C /* ASTNode.mm */,
 				3A4F478312CFA83900301464 /* KWordDictionary.h */,
 				3A4F478412CFA83900301464 /* KWordDictionary.mm */,
 			);
-			name = Text;
+			name = Autocomplete;
 			sourceTree = "<group>";
 		};
 		3A5107C812C1231700AAC1D5 /* kod helper */ = {
@@ -770,9 +686,8 @@
 				3AA8133812C36B390085F086 /* URL handlers */,
 				3AA819AF12C549490085F086 /* Crash reporting */,
 				3A5107C812C1231700AAC1D5 /* kod helper */,
-				3A40F8C312AFE5D7007B5879 /* Node */,
 				3ABF539712A5D5360020233C /* Main views */,
-				3A4F478212CFA81800301464 /* Text */,
+				3A4F478212CFA81800301464 /* Autocomplete */,
 				3A158AD3128A09D300339E6E /* ICU */,
 				3ABF56AE12A69F9D0020233C /* Style */,
 			);
@@ -824,6 +739,7 @@
 				3AA91F3312CA467E00132A25 /* libcrypto.dylib */,
 				3AA91F3512CA469100132A25 /* libdl.dylib */,
 				3AA91F3712CA469B00132A25 /* libz.dylib */,
+				C08761D012E490110055CB8F /* Python.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1191,7 +1107,6 @@
 				3AA8142712C390CE0085F086 /* about.md in Resources */,
 				3AA817FF12C4A6CC0085F086 /* fonts in Resources */,
 				3AA818D412C4DD330085F086 /* changelog in Resources */,
-				3A37B39412DA2A4200ED811C /* ast-viewer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,20 +1256,9 @@
 				3AA81A4212C60EEB0085F086 /* HURLConnection.m in Sources */,
 				3AA81B2412C62D270085F086 /* CIImage-kod.m in Sources */,
 				3AA81B2712C62D6A0085F086 /* NSImage-kod.m in Sources */,
-				3AA91F2312CA43DE00132A25 /* KNodeThread.mm in Sources */,
-				3AB57E0612CA634C00E528B1 /* kod_node_interface.mm in Sources */,
-				3AB57EAD12CA725A00E528B1 /* knode_ns_additions.mm in Sources */,
 				3AB5823612CAD15300E528B1 /* k_objc_prop.m in Sources */,
-				3A366A8412CB873D00257AE6 /* KObjectProxy.mm in Sources */,
-				3A366A8512CB873D00257AE6 /* node_kod.mm in Sources */,
 				3A4F478512CFA83900301464 /* KWordDictionary.mm in Sources */,
 				3AB6974B12D1085700330F3A /* KMachService-NSInvocation.m in Sources */,
-				3A37B0E612D9508B00ED811C /* ASTNodeWrapper.mm in Sources */,
-				3A37B39812DA2AB600ED811C /* KASTViewerController.mm in Sources */,
-				3A37B39D12DA2C5000ED811C /* KASTViewerWindowController.mm in Sources */,
-				3A37B4A812DA416E00ED811C /* ASTNode.mm in Sources */,
-				3A37B54712DA48E500ED811C /* KASTOutlineView.m in Sources */,
-				3AC866C412DE69360077673C /* KNodeParseEntry.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

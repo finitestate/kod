@@ -10,8 +10,8 @@
  * automatically reload the style, thus you see the effect of your alterations.
  */
 body {
-  font-family: "M+ 1m", monospace;
-  font-size: 11px;
+  font-family: "Consolas", monospace;
+  font-size: 14pt;
   background-color:#222;
   color: #eee;
 }
