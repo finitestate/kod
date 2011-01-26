@@ -20,7 +20,6 @@
 #import "KStatusBarView.h"
 #import "KMetaRulerView.h"
 #import "HEventEmitter.h"
-#import "ExternalUTF16String.h"
 
 #import "NSImage-kod.h"
 #import "CIImage-kod.h"

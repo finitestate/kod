@@ -21,35 +21,35 @@ typedef struct URegularExpression URegularExpression;
 
 @implementation NSString (NSStringICUAdditions)
 
--(NSString *)replaceOccurrencesOfPattern:(NSString *)aPattern withString:(NSString *)replacementText {
-  ICUPattern *p = [ICUPattern patternWithString:aPattern];
-  ICUMatcher *m = [ICUMatcher matcherWithPattern:p overString:self];
-  return [m replaceAllWithString:replacementText];
-}
-
--(BOOL)matchesPattern:(NSString *)aRegex {
-  ICUPattern *p = [ICUPattern patternWithString:aRegex];
-  ICUMatcher *m = [ICUMatcher matcherWithPattern:p overString:self];
-  return [m matches];
-}
-
--(NSArray *)findPattern:(NSString *)aRegex {
-  ICUPattern *p = [ICUPattern patternWithString:aRegex];
-  ICUMatcher *matcher = [ICUMatcher matcherWithPattern:p overString:self];
-  NSMutableArray *foundGroups = [NSMutableArray array];
-
-  [matcher findFromIndex:0];
-  int i;
-  for(i=0;i<=[matcher numberOfGroups];i++)
-    [foundGroups addObject:[matcher groupAtIndex:i]];
-
-  return [NSArray arrayWithArray:foundGroups];
-}
-
--(NSArray *)componentsSeparatedByPattern:(NSString *)aRegex {
-  ICUPattern *p = [ICUPattern patternWithString:aRegex];
-  return [p componentsSplitFromString:self];
-}
+//-(NSString *)replaceOccurrencesOfPattern:(NSString *)aPattern withString:(NSString *)replacementText {
+//  ICUPattern *p = [ICUPattern patternWithString:aPattern];
+//  ICUMatcher *m = [ICUMatcher matcherWithPattern:p overString:self];
+//  return [m replaceAllWithString:replacementText];
+//}
+//
+//-(BOOL)matchesPattern:(NSString *)aRegex {
+//  ICUPattern *p = [ICUPattern patternWithString:aRegex];
+//  ICUMatcher *m = [ICUMatcher matcherWithPattern:p overString:self];
+//  return [m matches];
+//}
+//
+//-(NSArray *)findPattern:(NSString *)aRegex {
+//  ICUPattern *p = [ICUPattern patternWithString:aRegex];
+//  ICUMatcher *matcher = [ICUMatcher matcherWithPattern:p overString:self];
+//  NSMutableArray *foundGroups = [NSMutableArray array];
+//
+//  [matcher findFromIndex:0];
+//  int i;
+//  for(i=0;i<=[matcher numberOfGroups];i++)
+//    [foundGroups addObject:[matcher groupAtIndex:i]];
+//
+//  return [NSArray arrayWithArray:foundGroups];
+//}
+//
+//-(NSArray *)componentsSeparatedByPattern:(NSString *)aRegex {
+//  ICUPattern *p = [ICUPattern patternWithString:aRegex];
+//  return [p componentsSplitFromString:self];
+//}
 
 +(NSString *)stringWithICUString:(void *)utf16EncodedString {
   NSUInteger length = u_strlen(utf16EncodedString)*sizeof(UChar);

@@ -43,7 +43,7 @@ static CGFloat kTextContainerYOffset = 0.0;
   [self setImportsGraphics:NO];
   //[self turnOffKerning:self]; // we are monospace (robot voice)
   [self setAutoresizingMask:NSViewWidthSizable];
-  [self setUsesFindPanel:YES];
+  //[self setUsesFindPanel:YES];
   [self setTextContainerInset:NSMakeSize(2.0, 4.0)];
   [self setVerticallyResizable:YES];
   [self setMaxSize:NSMakeSize(FLT_MAX, FLT_MAX)];

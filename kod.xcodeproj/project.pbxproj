@@ -6,21 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		3AAA9FB312BFC8890079F079 /* Distribute */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 3AAA9FBA12BFC8B50079F079 /* Build configuration list for PBXAggregateTarget "Distribute" */;
-			buildPhases = (
-				3AAA9FB212BFC8890079F079 /* ShellScript */,
-			);
-			dependencies = (
-				3AAA9FB712BFC8900079F079 /* PBXTargetDependency */,
-			);
-			name = Distribute;
-			productName = Distribute;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		3A158ADB128A09D300339E6E /* ICUMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A158AD5128A09D300339E6E /* ICUMatcher.m */; };
 		3A158ADC128A09D300339E6E /* ICUPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A158AD7128A09D300339E6E /* ICUPattern.m */; };
@@ -140,29 +125,17 @@
 		3AF39DE212BEC15E00FC534A /* KPopUpContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39DE112BEC15E00FC534A /* KPopUpContentView.m */; };
 		3AF3A0A512BF7F6400FC534A /* KAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3A0A412BF7F6400FC534A /* KAnimation.m */; };
 		C08761D112E490110055CB8F /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08761D012E490110055CB8F /* Python.framework */; };
+		C087670A12E4A12F0055CB8F /* KM_Grammar.m in Sources */ = {isa = PBXBuildFile; fileRef = C087670912E4A12F0055CB8F /* KM_Grammar.m */; };
+		C08767A912E4FF4F0055CB8F /* NSStringOnigurumaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C08767A812E4FF4F0055CB8F /* NSStringOnigurumaAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A4455C912D7B16900036EF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A928BEF1227143800DA7E43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A44552012D786AC00036EF0;
-			remoteInfo = nodejs;
-		};
 		3A510B3112C26C3E00AAC1D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A928BEF1227143800DA7E43 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3A5107F712C135A200AAC1D5;
 			remoteInfo = kod_helper;
-		};
-		3AAA9FB612BFC8900079F079 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A928BEF1227143800DA7E43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A928C1F1227151800DA7E43;
-			remoteInfo = Kod;
 		};
 		3AC6ECC312C8E05B00C8DBFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -231,16 +204,6 @@
 				3AE5E9A3129180CB00B17C4F /* CSS.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AAAA2FE12C1065F0079F079 /* Copy nodelib */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = nodelib;
-			dstSubfolderSpec = 12;
-			files = (
-			);
-			name = "Copy nodelib";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -470,6 +433,10 @@
 		3AF3A0A312BF7F6400FC534A /* KAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAnimation.h; sourceTree = "<group>"; };
 		3AF3A0A412BF7F6400FC534A /* KAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAnimation.m; sourceTree = "<group>"; };
 		C08761D012E490110055CB8F /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
+		C087670812E4A12F0055CB8F /* KM_Grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KM_Grammar.h; sourceTree = "<group>"; };
+		C087670912E4A12F0055CB8F /* KM_Grammar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KM_Grammar.m; sourceTree = "<group>"; };
+		C08767A712E4FF4F0055CB8F /* NSStringOnigurumaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringOnigurumaAdditions.h; sourceTree = "<group>"; };
+		C08767A812E4FF4F0055CB8F /* NSStringOnigurumaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringOnigurumaAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -665,6 +632,8 @@
 		3A928C13122714E800DA7E43 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C08767A612E4FF340055CB8F /* Oniguruma */,
+				C087670712E4A0F40055CB8F /* TM Grammar */,
 				3AE5E8D112916F3300B17C4F /* Base */,
 				3A811A5812AE7DC400BC08AE /* hunch-cocoa */,
 				3AB97D3F12B298FB00F4ADB2 /* BWToolkit */,
@@ -958,24 +927,25 @@
 			name = "Pop-ups";
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-		3A44552012D786AC00036EF0 /* nodejs */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 3A44552612D786E200036EF0 /* Build configuration list for PBXLegacyTarget "nodejs" */;
-			buildPhases = (
+		C087670712E4A0F40055CB8F /* TM Grammar */ = {
+			isa = PBXGroup;
+			children = (
+				C087670812E4A12F0055CB8F /* KM_Grammar.h */,
+				C087670912E4A12F0055CB8F /* KM_Grammar.m */,
 			);
-			buildToolPath = "../node-build.sh";
-			buildWorkingDirectory = "$(SRCROOT)/deps/node";
-			dependencies = (
-			);
-			name = nodejs;
-			passBuildSettingsInEnvironment = 1;
-			productName = nodejs;
+			name = "TM Grammar";
+			sourceTree = "<group>";
 		};
-/* End PBXLegacyTarget section */
+		C08767A612E4FF340055CB8F /* Oniguruma */ = {
+			isa = PBXGroup;
+			children = (
+				C08767A712E4FF4F0055CB8F /* NSStringOnigurumaAdditions.h */,
+				C08767A812E4FF4F0055CB8F /* NSStringOnigurumaAdditions.m */,
+			);
+			name = Oniguruma;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		3A5107F712C135A200AAC1D5 /* kod_helper */ = {
@@ -1004,7 +974,6 @@
 				3A928C1E1227151800DA7E43 /* Frameworks */,
 				3A9291381229BBB600DA7E43 /* Copy Frameworks */,
 				3A40F8DA12AFEB89007B5879 /* Copy Support Files */,
-				3AAAA2FE12C1065F0079F079 /* Copy nodelib */,
 				3AAAA19712C0179E0079F079 /* Run Script: Clean */,
 			);
 			buildRules = (
@@ -1013,7 +982,6 @@
 				3AE5E8B712915AC600B17C4F /* PBXTargetDependency */,
 				3A510B3212C26C3E00AAC1D5 /* PBXTargetDependency */,
 				3AC6ECD612C8E09A00C8DBFC /* PBXTargetDependency */,
-				3A4455CA12D7B16900036EF0 /* PBXTargetDependency */,
 			);
 			name = Kod;
 			productName = Kod;
@@ -1052,8 +1020,6 @@
 			targets = (
 				3A928C1F1227151800DA7E43 /* Kod */,
 				3A5107F712C135A200AAC1D5 /* kod_helper */,
-				3A44552012D786AC00036EF0 /* nodejs */,
-				3AAA9FB312BFC8890079F079 /* Distribute */,
 			);
 		};
 /* End PBXProject section */
@@ -1127,19 +1093,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "VERSION=$(defaults read \"$PROJECT_DIR/resources/Info\" CFBundleVersion)\necho \"#define K_VERSION_STR \"'\"'$VERSION'\"' > src/kod_version.h";
-		};
-		3AAA9FB212BFC8890079F079 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/bin/bash admin/distribution.sh\nexit $?";
 		};
 		3AAAA19712C0179E0079F079 /* Run Script: Clean */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1259,26 +1212,18 @@
 				3AB5823612CAD15300E528B1 /* k_objc_prop.m in Sources */,
 				3A4F478512CFA83900301464 /* KWordDictionary.mm in Sources */,
 				3AB6974B12D1085700330F3A /* KMachService-NSInvocation.m in Sources */,
+				C087670A12E4A12F0055CB8F /* KM_Grammar.m in Sources */,
+				C08767A912E4FF4F0055CB8F /* NSStringOnigurumaAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A4455CA12D7B16900036EF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A44552012D786AC00036EF0 /* nodejs */;
-			targetProxy = 3A4455C912D7B16900036EF0 /* PBXContainerItemProxy */;
-		};
 		3A510B3212C26C3E00AAC1D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3A5107F712C135A200AAC1D5 /* kod_helper */;
 			targetProxy = 3A510B3112C26C3E00AAC1D5 /* PBXContainerItemProxy */;
-		};
-		3AAA9FB712BFC8900079F079 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A928C1F1227151800DA7E43 /* Kod */;
-			targetProxy = 3AAA9FB612BFC8900079F079 /* PBXContainerItemProxy */;
 		};
 		3AC6ECD612C8E09A00C8DBFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1293,20 +1238,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3A44552112D786AC00036EF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = nodejs;
-			};
-			name = Debug;
-		};
-		3A44552212D786AC00036EF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = nodejs;
-			};
-			name = Release;
-		};
 		3A5107FA12C135A200AAC1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1383,6 +1314,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA91E5D12C95CC000132A25 /* debug.xcconfig */;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(KOD_DEPS)/onig-5.9.2/build/lib",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lonig",
+				);
 			};
 			name = Debug;
 		};
@@ -1390,42 +1332,23 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA91E5E12C95CC000132A25 /* release.xcconfig */;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		3AAA9FB412BFC8890079F079 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = Distribute;
-			};
-			name = Debug;
-		};
-		3AAA9FB512BFC8890079F079 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PRODUCT_NAME = Distribute;
-				ZERO_LINK = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(KOD_DEPS)/onig-5.9.2/build/lib",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-lonig",
+				);
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A44552612D786E200036EF0 /* Build configuration list for PBXLegacyTarget "nodejs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A44552112D786AC00036EF0 /* Debug */,
-				3A44552212D786AC00036EF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3A51080212C135C800AAC1D5 /* Build configuration list for PBXNativeTarget "kod_helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1449,15 +1372,6 @@
 			buildConfigurations = (
 				3A928C241227151800DA7E43 /* Debug */,
 				3A928C251227151800DA7E43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3AAA9FBA12BFC8B50079F079 /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AAA9FB412BFC8890079F079 /* Debug */,
-				3AAA9FB512BFC8890079F079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

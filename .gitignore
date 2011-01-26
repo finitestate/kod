@@ -2,6 +2,8 @@
 .DS_Store
 ._*
 *.o
+*.a
+*.lo
 *.dylib
 * copy.*
 .lock-wscript
@@ -24,3 +26,6 @@ xcuserdata
 /website/public/config.php
 /node-kod/build
 /xcconfig/base-local.xcconfig
+
+# oniguruma
+/deps/onig-5.9.2/samples

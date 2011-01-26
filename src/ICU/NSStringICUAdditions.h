@@ -42,7 +42,7 @@
   array.  The first element of the array is the entire match and subsequent
   elements are the groups in the order the matches occur.
 */
--(NSArray *)findPattern:(NSString *)aRegex;
+//-(NSArray *)findPattern:(NSString *)aRegex;
 
 /*!
     @method     componentsSeparatedByPattern:
@@ -50,7 +50,7 @@
     @discussion Break a string into components where components separated
   by occurrences of the given pattern.
 */
--(NSArray *)componentsSeparatedByPattern:(NSString *)aRegex;
+//-(NSArray *)componentsSeparatedByPattern:(NSString *)aRegex;
 
 /*!
     @method     replaceOccurrencesOfPattern:withString:
@@ -58,13 +58,13 @@
     @discussion Replace occurrences of the pattern with the replacement text.
    The replacement text may contain backrerferences.
 */
--(NSString *)replaceOccurrencesOfPattern:(NSString *)aPattern withString:(NSString *)replacementText;
+//-(NSString *)replaceOccurrencesOfPattern:(NSString *)aPattern withString:(NSString *)replacementText;
 
 /*!
     @method     matchesPattern:
     @abstract   Returns YES if the string matches the entire pattern.
     @discussion Returns YES if the string matches the entire pattern.
 */
--(BOOL)matchesPattern:(NSString *)aRegex;
+//-(BOOL)matchesPattern:(NSString *)aRegex;
 
 @end
