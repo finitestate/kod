@@ -1,7 +1,0 @@
-euc_tw.lo euc_tw.o: enc/euc_tw.c regenc.h config.h oniguruma.h
-
-regenc.h:
-
-config.h:
-
-oniguruma.h:

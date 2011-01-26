@@ -1,8 +1,0 @@
-iso8859_15.lo iso8859_15.o: enc/iso8859_15.c regenc.h config.h \
-  oniguruma.h
-
-regenc.h:
-
-config.h:
-
-oniguruma.h:
