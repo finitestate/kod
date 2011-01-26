@@ -1,0 +1,7 @@
+iso8859_3.lo iso8859_3.o: enc/iso8859_3.c regenc.h config.h oniguruma.h
+
+regenc.h:
+
+config.h:
+
+oniguruma.h:
